@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CDN STACKPATH -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Externally linked files -->
+    <link rel="icon" href="../Utilities/Images/logo.png">
+    <link rel="stylesheet" href="../CSS/gamePage.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="animated fadeInDown">
+        <img src="../Utilities/Images/logo.png" alt="">
+        <h2>TIC-TAC-TOE</h2>
+    </nav>
+
+    <!-- BODY PART OF THE GAME -->
+    <div class="gamePart">
+        <!-- GAME STATUS -->
+        <h2 class="game--status"></h2>
+        <!-- GRID -->
+        <div class="game--container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+        <button class="game--restart btn btn-success btn-lg">Reset</button>
+        <!-- SCORE TABLE -->
+        <table>
+            <th>X</span></th>
+            <th>DRAW</span></th>
+            <th>O</span></th>
+            <tr>
+                <td span id="win">0</td>
+                <td span id="draw">0</td>
+                <td span id="lose">0</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="../JavaScript/script.js"></script>
+
+</body>
+
+</html>

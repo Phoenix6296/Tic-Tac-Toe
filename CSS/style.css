@@ -1,0 +1,106 @@
+/* ROOT ELEMENT */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* BODY */
+body{
+    background: linear-gradient(180deg, #008aff, #ff137d,#99ff99);
+}
+
+
+
+
+/* FIRST SECTION */
+section{
+    display: flex;
+    margin-top: 8%;
+}
+/* Section->Part1 */
+.part1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 100px;
+}
+/* Section->Part1->h2 */
+.part1 h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+/* Section->Part1->div */
+.part1 div{
+    margin: 15px;
+}
+/* Section->Part1->div->h2 */
+.part1 div h2{
+    font-size: 2.8rem;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 4px;
+}
+/* Paragraph */
+p{
+    font-size: 1.2rem;
+}
+/* Section->Part2 */
+.part2{
+    margin-right: 100px;
+}
+/* Section->Part2->Image */
+img{
+    height: 550px;
+    width: 300px;
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+/* SECOND SECTION */
+.Section-2{
+    height: 150px;
+}    
+/* Section2->Svg Image */
+svg{
+    position: relative;
+    bottom: 170px;
+    z-index: 0;   
+}
+
+
+
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 1185px){
+    html{
+        box-sizing: border-box;
+    }
+    section{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .part1{
+        flex-direction: column;
+        margin: 0 !important;
+    }
+    .part1 div h2, p{
+        text-align: center !important;
+    }
+    button{
+        margin-bottom: 30px;
+    }
+    .part2{
+        margin: 0 auto !important;
+    }
+    svg{
+        display: none;
+        overflow: hidden;
+    }
+}
